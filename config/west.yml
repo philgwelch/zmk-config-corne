@@ -16,8 +16,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-  #   - name: nice-view-gem
-  #     remote: m165437
-  #     revision: main
+    - name: nv-gem
+      url: https://github.com/MechboardsLTD/zmk-module
+      revision: nv_gem
   self:
     path: config
