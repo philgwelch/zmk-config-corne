@@ -14,12 +14,10 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-helpers
-      remote: urob
-      revision: main
     - name: nv-gem
       url: https://github.com/MechboardsLTD/zmk-module
-      revision: nv_gem
+      revision:
+        nv_gem
 
         # ZMK modules
     - name: zmk-adaptive-key
