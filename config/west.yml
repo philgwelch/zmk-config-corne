@@ -1,13 +1,14 @@
 manifest:
+  defaults:
+    remote: urob
+    revision: v0.3 # Pin everything to v0.3
+
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
-    # - name: m165437
-    #   url-base: https://github.com/M165437
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,5 +20,20 @@ manifest:
     - name: nv-gem
       url: https://github.com/MechboardsLTD/zmk-module
       revision: nv_gem
+
+        # ZMK modules
+    - name: zmk-adaptive-key
+      path: modules/zmk/adaptive-key
+    - name: zmk-auto-layer
+      path: modules/zmk/auto-layer
+    - name: zmk-helpers
+      path: modules/zmk/helpers
+    - name: zmk-leader-key
+      path: modules/zmk/leader-key
+    - name: zmk-tri-state
+      path: modules/zmk/tri-state
+    - name: zmk-unicode
+      path: modules/zmk/unicode
+
   self:
     path: config
